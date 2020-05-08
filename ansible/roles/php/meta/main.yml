@@ -6,32 +6,33 @@
 
 # Ensure that custom Ansible plugins and modules included in the main DebOps
 # collection are available to roles in other collections.
-collections: [ 'debops.debops' ]
+collections: ['debops.debops']
 
 dependencies: []
 
 galaxy_info:
-
-  author: 'Mariano Barcia, Maciej Delmanowski'
-  description: 'Install and manage PHP environment'
-  company: 'DebOps'
-  license: 'GPL-3.0-only'
-  min_ansible_version: '2.2.0'
-  platforms:
+ author: 'Mariano Barcia, Maciej Delmanowski'
+ description: 'Install and manage PHP environment'
+ company: 'DebOps'
+ license: 'GPL-3.0-only'
+ min_ansible_version: '2.2.0'
+ platforms:
   - name: Ubuntu
     versions:
-    - precise
-    - quantal
-    - raring
-    - saucy
-    - trusty
-    - xenial
+     - precise
+     - quantal
+     - raring
+     - saucy
+     - trusty
+     - xenial
+     - bionic
+     - focal
   - name: Debian
     versions:
-    - wheezy
-    - jessie
-    - buster
-  galaxy_tags:
+     - wheezy
+     - jessie
+     - buster
+ galaxy_tags:
   - development
   - web
   - php

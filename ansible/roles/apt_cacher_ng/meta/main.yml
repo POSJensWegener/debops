@@ -5,36 +5,35 @@
 
 # Ensure that custom Ansible plugins and modules included in the main DebOps
 # collection are available to roles in other collections.
-collections: [ 'debops.debops' ]
+collections: ['debops.debops']
 
 dependencies: []
 
 galaxy_info:
+ company: 'DebOps'
+ author: 'Robin Schneider'
+ description: 'Install and manage the caching HTTP proxy Apt-Cacher NG'
+ license: 'GPL-3.0-only'
+ min_ansible_version: '2.0.0'
 
-  company: 'DebOps'
-  author: 'Robin Schneider'
-  description: 'Install and manage the caching HTTP proxy Apt-Cacher NG'
-  license: 'GPL-3.0-only'
-  min_ansible_version: '2.0.0'
+ platforms:
+  - name: Debian
+    versions:
+     - wheezy
+     - jessie
 
-  platforms:
+  - name: Ubuntu
+    versions:
+     - precise
+     - quantal
+     - raring
+     - saucy
+     - trusty
+     - focal
 
-    - name: Debian
-      versions:
-        - wheezy
-        - jessie
-
-    - name: Ubuntu
-      versions:
-        - precise
-        - quantal
-        - raring
-        - saucy
-        - trusty
-
-  galaxy_tags:
-    - system
-    - proxy
-    - caching
-    - packages
-    - apt
+ galaxy_tags:
+  - system
+  - proxy
+  - caching
+  - packages
+  - apt

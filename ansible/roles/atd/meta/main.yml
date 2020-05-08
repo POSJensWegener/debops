@@ -5,32 +5,32 @@
 
 # Ensure that custom Ansible plugins and modules included in the main DebOps
 # collection are available to roles in other collections.
-collections: [ 'debops.debops' ]
+collections: ['debops.debops']
 
 dependencies: []
 
 galaxy_info:
-
-  author: 'Maciej Delmanowski'
-  description: 'Install and configure atd service'
-  company: 'DebOps'
-  license: 'GPL-3.0-only'
-  min_ansible_version: '2.0.0'
-  platforms:
-    - name: Ubuntu
-      versions:
-        - precise
-        - quantal
-        - raring
-        - saucy
-        - trusty
-    - name: Debian
-      versions:
-        - wheezy
-        - jessie
-  galaxy_tags:
-    - system
-    - at
-    - batch
-    - jobqueue
-    - jobs
+ author: 'Maciej Delmanowski'
+ description: 'Install and configure atd service'
+ company: 'DebOps'
+ license: 'GPL-3.0-only'
+ min_ansible_version: '2.0.0'
+ platforms:
+  - name: Ubuntu
+    versions:
+     - precise
+     - quantal
+     - raring
+     - saucy
+     - trusty
+     - focal
+  - name: Debian
+    versions:
+     - wheezy
+     - jessie
+ galaxy_tags:
+  - system
+  - at
+  - batch
+  - jobqueue
+  - jobs
