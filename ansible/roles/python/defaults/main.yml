@@ -45,7 +45,7 @@ python__raw_apt_cache_valid_time:
 python__v3:
  '{{ False
  if (ansible_distribution_release|d() in
- [ "wheezy", "precise", "bionic", "focal" ])
+ [ "wheezy", "precise" ])
  else True }}'
  # ]]]
 # .. envvar:: python__core_packages3 [[[
